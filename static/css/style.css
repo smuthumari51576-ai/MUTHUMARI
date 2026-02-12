@@ -1,0 +1,50 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    width: 400px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+input {
+    border-radius: 10px !important;
+}
+
+.btn-custom {
+    background: #ff6b6b;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-custom:hover {
+    transform: scale(1.05);
+    background: #ff4757;
+}
+
+.btn-click {
+    transform: scale(0.9);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
